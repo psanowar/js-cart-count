@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Header</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+		<main>
+
+		  <header>
+		    <h1>Your Shopping Cart</h1>
+
+		    <div class="cart-container">
+		      <div class="cart">
+		        <i class="fa fa-shopping-cart fa-2x"></i>
+		        <button class="clear">Empty Cart</button>
+		      </div>
+		      <span id="itemCount"></span>
+		    </div>
+
+		  </header>
+
+		  <div class="item">
+		    <div class="itemDetails">
+		      <div class="itemImage">
+		        <img src="image/camera.jpg" alt="" />
+		      </div>
+
+		      <div class="itemText">
+		        <p class="price">Price: €10</p>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at optio nam asperiores ipsam voluptate eaque labore.</p>
+		      </div>
+
+		    </div>
+		    <button class="add">Add to cart</button>
+		  </div>
+		  <div class="item">
+		    <div class="itemDetails">
+		      <div class="itemImage">
+		        <img src="image/headphonw.jpg" alt="" />
+		      </div>
+
+		      <div class="itemText">
+		        <p class="price">Price: €10</p>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at optio nam asperiores ipsam voluptate eaque labore.</p>
+		      </div>
+
+		    </div>
+		    <button class="add">Add to cart</button>
+		  </div>
+		  <div class="item">
+		    <div class="itemDetails">
+		      <div class="itemImage">
+		        <img src="image/watch.jpg" alt="" />
+		      </div>
+
+		      <div class="itemText">
+		        <p class="price">Price: €10</p>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at optio nam asperiores ipsam voluptate eaque labore.</p>
+		      </div>
+
+		    </div>
+		    <button class="add">Add to cart</button>
+		  </div>
+
+		</main>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+		<script type="text/javascript">
+			
+			$(document).ready(function(){
+				let itemCount =0;
+				$('.add').click(function(){
+					itemCount ++;
+
+					$('#itemCount').html(itemCount).css('display', 'block');
+				});
+
+				$('.clear').click(function(){
+					itemCount = 0;
+
+					$('#itemCount').html('').css('display', 'none');	
+				});
+			});
+
+		</script>
+
+</body>
+</html>
