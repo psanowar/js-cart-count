@@ -14,14 +14,14 @@
 		<main>
 
 		  <header>
-		    <h1>Your Shopping Cart</h1>
+		    <h1>Shopping Cart</h1>
 
 		    <div class="cart-container">
 		      <div class="cart">
 		        <i class="fa fa-shopping-cart fa-2x"></i>
-		        <button class="clear">Empty Cart</button>
+		        <button class="empty">Clear Cart</button>
 		      </div>
-		      <span id="itemCount"></span>
+		      <span id="imCount"></span>
 		    </div>
 
 		  </header>
@@ -76,17 +76,17 @@
 		<script type="text/javascript">
 			
 			$(document).ready(function(){
-				let itemCount =0;
+				let imCount =0;
 				$('.add').click(function(){
-					itemCount ++;
+					imCount ++;
 
-					$('#itemCount').html(itemCount).css('display', 'block');
+					$('#imCount').html(imCount).css('display', 'block');
 				});
 
-				$('.clear').click(function(){
-					itemCount = 0;
+				$('.empty').click(function(){
+					imCount = 0;
 
-					$('#itemCount').html('').css('display', 'none');	
+					$('#imCount').html('').css('display', 'none');	
 				});
 			});
 

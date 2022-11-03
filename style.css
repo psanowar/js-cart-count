@@ -30,7 +30,7 @@ h1{
 	position: relative;
 }
 
-#itemCount{
+#imCount{
   position: absolute;
   display: none;
   top: -10px;
